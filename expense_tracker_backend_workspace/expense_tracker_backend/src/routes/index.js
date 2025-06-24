@@ -10,10 +10,11 @@ const router = express.Router();
  * @swagger
  * /:
  *   get:
- *     summary: Health endpoint
+ *     summary: Health check
+ *     tags: [Health]
  *     responses:
  *       200:
- *         description: Service health check passed
+ *         description: The service is healthy
  *         content:
  *           application/json:
  *             schema:
@@ -37,4 +38,55 @@ router.use('/auth', authRoutes);
 router.use('/incomes', incomeRoutes);
 router.use('/expenses', expenseRoutes);
 
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         username:
+ *           type: string
+ *     Expense:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         userId:
+ *           type: string
+ *         amount:
+ *           type: number
+ *         description:
+ *           type: string
+ *         category:
+ *           type: string
+ *         date:
+ *           type: string
+ *           format: date
+ *     Income:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         userId:
+ *           type: string
+ *         amount:
+ *           type: number
+ *         description:
+ *           type: string
+ *         category:
+ *           type: string
+ *         date:
+ *           type: string
+ *           format: date
+ */
+
+/**
+ * @swagger
+ * tags:
+ *   name: Health
+ *   description: Health check
+ */
 module.exports = router;

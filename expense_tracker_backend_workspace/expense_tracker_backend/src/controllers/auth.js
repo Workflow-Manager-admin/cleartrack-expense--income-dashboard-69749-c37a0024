@@ -21,7 +21,11 @@ class AuthController {
       users.push(newUser);
       await db.users.save(users);
 
-      res.status(201).json({ message: 'User registered successfully' });
+      res.status(201).json({
+        message: 'User registered successfully',
+        userId: newUser.id,
+        username: newUser.username
+      });
     } catch (error) {
       next(error);
     }
