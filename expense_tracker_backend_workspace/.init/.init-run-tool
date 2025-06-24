@@ -1,0 +1,4 @@
+{
+    "command": "CI=true PORT=<port> HOST=0.0.0.0 npm run dev",
+    "working_directory": "/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_backend_workspace/expense_tracker_backend"
+}

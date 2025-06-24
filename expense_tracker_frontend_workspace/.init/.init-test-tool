@@ -1,0 +1,4 @@
+{
+    "command": "npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend"
+}
