@@ -3,6 +3,7 @@ const healthController = require('../controllers/health');
 const authRoutes = require('./auth');
 const incomeRoutes = require('./income');
 const expenseRoutes = require('./expense');
+const analyticsRoutes = require('./analytics');
 
 const router = express.Router();
 
@@ -37,6 +38,7 @@ router.get('/', healthController.check.bind(healthController));
 router.use('/auth', authRoutes);
 router.use('/incomes', incomeRoutes);
 router.use('/expenses', expenseRoutes);
+router.use('/analytics', analyticsRoutes);
 
 /**
  * @swagger
@@ -81,6 +83,19 @@ router.use('/expenses', expenseRoutes);
  *         date:
  *           type: string
  *           format: date
+ *     Analytics:
+ *       type: object
+ *       properties:
+ *         totalIncome:
+ *           type: number
+ *         totalExpenses:
+ *           type: number
+ *         balance:
+ *           type: number
+ *         expensesByCategory:
+ *           type: object
+ *           additionalProperties:
+ *             type: number
  */
 
 /**
