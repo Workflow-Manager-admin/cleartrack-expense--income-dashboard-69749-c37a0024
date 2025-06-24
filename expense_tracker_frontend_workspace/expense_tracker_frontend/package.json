@@ -8,14 +8,16 @@
   "dependencies": {
     "@remotion/cli": "4.0.286",
     "@remotion/zod-types": "4.0.286",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "remotion": "4.0.286",
-    "zod": "3.22.3"
+    "zod": "3.22.3",
+    "@remotion/layout-utils": "4.0.286",
+    "lucide-react": "^0.417.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.286",
-    "@types/react": "19.0.0",
+    "@types/react": "^18.2.0",
     "@types/web": "0.0.166",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.29.0",
