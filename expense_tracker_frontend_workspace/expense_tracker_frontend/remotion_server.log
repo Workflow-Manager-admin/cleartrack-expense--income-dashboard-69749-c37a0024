@@ -2,7 +2,17 @@
 > remotion@1.0.0 dev
 > remotion studio  --host 0.0.0.0 --port 3000
 
-Server ready - Local: http://localhost:3000, Network: http://172.17.0.2:3000
-Built in 2090ms
+
+Error: You specified port 3000 to be used for the HTTP server, but it is not available. Choose a different port or remoBuilding...
+Built in 91ms
 Building...
-Built in 147ms
+Built in 2411ms
+Building...
+Built in 468ms
+Building...
+Built in 397ms
+Building...
+Built in 251ms
+Building...
+Built in 502ms
+shboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/@remotion/renderer/dist/get-port.js:65:15)

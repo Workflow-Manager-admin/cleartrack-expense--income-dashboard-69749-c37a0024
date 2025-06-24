@@ -1,6 +1,7 @@
 // eslint.config.mjs
 import typescript from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
+import globals from 'globals';
 
 export default [
   {
@@ -8,6 +9,7 @@ export default [
     languageOptions: {
       parser: tsParser,
       globals: {
+        ...globals.browser,
         React: 'readable'  // Add this line to define React as a global
       }
     },
@@ -25,6 +27,7 @@ export default [
     files: ["**/*.{js,jsx}"],
     languageOptions: {
       globals: {
+        ...globals.browser,
         React: 'readable'
       }
     },

@@ -1,5 +1,4 @@
 import React from "react";
-import { Dashboard } from "../Dashboard";
 
 const contentStyles: React.CSSProperties = {
   padding: 20,
@@ -7,9 +6,5 @@ const contentStyles: React.CSSProperties = {
 };
 
 export const Content: React.FC = () => {
-  return (
-    <main style={contentStyles}>
-      <Dashboard />
-    </main>
-  );
+  return <main style={contentStyles}>Main Content</main>;
 };
