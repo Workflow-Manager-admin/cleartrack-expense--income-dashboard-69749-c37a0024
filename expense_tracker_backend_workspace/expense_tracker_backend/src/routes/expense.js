@@ -61,4 +61,65 @@ const router = express.Router();
 router.post('/', auth, expenseController.addExpense);
 router.get('/', auth, expenseController.getExpenses);
 
+/**
+ * @swagger
+ * /expenses/{id}:
+ *   put:
+ *     summary: Update an expense
+ *     tags: [Expenses]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The expense ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               amount:
+ *                 type: number
+ *               description:
+ *                 type: string
+ *               category:
+ *                 type: string
+ *               date:
+ *                 type: string
+ *                 format: date
+ *     responses:
+ *       200:
+ *         description: Expense updated successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Expense'
+ *       404:
+ *         description: Expense not found
+ *   delete:
+ *     summary: Delete an expense
+ *     tags: [Expenses]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The expense ID
+ *     responses:
+ *       204:
+ *         description: Expense deleted successfully
+ *       404:
+ *         description: Expense not found
+ */
+router.put('/:id', auth, expenseController.updateExpense);
+router.delete('/:id', auth, expenseController.deleteExpense);
+
 module.exports = router;

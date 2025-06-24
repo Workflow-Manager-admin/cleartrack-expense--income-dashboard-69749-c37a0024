@@ -61,4 +61,65 @@ const router = express.Router();
 router.post('/', auth, incomeController.addIncome);
 router.get('/', auth, incomeController.getIncomes);
 
+/**
+ * @swagger
+ * /incomes/{id}:
+ *   put:
+ *     summary: Update an income
+ *     tags: [Incomes]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The income ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               amount:
+ *                 type: number
+ *               description:
+ *                 type: string
+ *               category:
+ *                 type: string
+ *               date:
+ *                 type: string
+ *                 format: date
+ *     responses:
+ *       200:
+ *         description: Income updated successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Income'
+ *       404:
+ *         description: Income not found
+ *   delete:
+ *     summary: Delete an income
+ *     tags: [Incomes]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The income ID
+ *     responses:
+ *       204:
+ *         description: Income deleted successfully
+ *       404:
+ *         description: Income not found
+ */
+router.put('/:id', auth, incomeController.updateIncome);
+router.delete('/:id', auth, incomeController.deleteIncome);
+
 module.exports = router;
