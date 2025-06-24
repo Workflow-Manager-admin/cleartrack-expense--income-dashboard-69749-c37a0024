@@ -10,6 +10,10 @@ import { AuthProvider, useAuth } from "./hooks/useAuth";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
 import { Layout } from "./components/Layout";
+import { Dashboard } from "./components/Dashboard";
+import { Income } from "./components/Income";
+import { Expenses } from "./components/Expenses";
+import { Settings } from "./components/Settings";
 
 const App: React.FC = () => {
   const { isAuthenticated } = useAuth();
@@ -19,7 +23,12 @@ const App: React.FC = () => {
       <Route
         path="/"
         element={isAuthenticated ? <Layout /> : <Navigate to="/login" />}
-      />
+      >
+        <Route index element={<Dashboard />} />
+        <Route path="income" element={<Income />} />
+        <Route path="expenses" element={<Expenses />} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
     </Routes>

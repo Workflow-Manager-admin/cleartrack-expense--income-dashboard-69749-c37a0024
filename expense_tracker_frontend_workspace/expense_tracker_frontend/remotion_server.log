@@ -3,16 +3,128 @@
 > remotion studio  --host 0.0.0.0 --port 3000
 
 
-Error: You specified port 3000 to be used for the HTTP server, but it is not available. Choose a different port or remoBuilding...
-Built in 91ms
+Error: You specified port 3000 to be used for the HTTP server, but it is not available. Choose a different port or remove the setting to let Remotion automatically select a free port.
+    at Object.getDesiredPort (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expeBuilding...
+ERROR in ./src/components/Expenses/index.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/components/Expenses/index.tsx:3:0: ERROR: Unexpected "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 765ms
 Building...
-Built in 2411ms
+ERROR in ./src/components/Expenses/index.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/components/Expenses/index.tsx:3:0: ERROR: Unexpected "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 428ms
 Building...
-Built in 468ms
+ERROR in ./src/components/Expenses/index.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/components/Expenses/index.tsx:3:0: ERROR: Unexpected "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 385ms
 Building...
-Built in 397ms
+ERROR in ./src/components/Expenses/index.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/components/Expenses/index.tsx:3:0: ERROR: Unexpected "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 348ms
 Building...
-Built in 251ms
+ERROR in ./src/Root.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/Root.tsx:14:17: ERROR: Expected "from" but found "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 189ms
 Building...
-Built in 502ms
-shboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/@remotion/renderer/dist/get-port.js:65:15)
+ERROR in ./src/components/Expenses/index.tsx
+Module build failed (from ./node_modules/@remotion/bundler/dist/esbuild-loader/index.js):
+Error: Transform failed with 1 error:
+/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/src/components/Expenses/index.tsx:3:0: ERROR: Unexpected "."
+    at failureErrorWithLog (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:1477:15)
+    at /home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:756:50
+    at responseCallbacks.<computed> (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:623:9)
+    at handleIncomingPacket (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:678:12)
+    at Socket.readFromStdout (/home/kavia/workspace/code-generation/cleartrack-expense--income-dashboard-69749-c37a0024/expense_tracker_frontend_workspace/expense_tracker_frontend/node_modules/esbuild/lib/main.js:601:7)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+Built in 466ms
+Building...
+Built in 562ms
+Building...
+Built in 380ms
+Building...
+Built in 423ms
+Building...
+Built in 492ms
+Building...
+Built in 366ms
+Building...
+Built in 449ms
+Building...
+Built in 378ms
+Building...
+Built in 423ms
+Building...
+Built in 343ms
+Building...
+Built in 315ms
+Building...
+Built in 145ms
+Building...
+Built in 363ms
+Building...
+Built in 695ms
+Building...
+Built in 363ms

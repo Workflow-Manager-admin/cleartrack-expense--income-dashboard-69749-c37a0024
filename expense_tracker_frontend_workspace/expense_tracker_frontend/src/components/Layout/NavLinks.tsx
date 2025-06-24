@@ -5,12 +5,13 @@ import {
   Settings,
 } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
-  { icon: LayoutDashboard, text: "Dashboard" },
-  { icon: Wallet, text: "Income" },
-  { icon: ArrowLeftRight, text: "Expenses" },
-  { icon: Settings, text: "Settings" },
+  { icon: LayoutDashboard, text: "Dashboard", path: "/" },
+  { icon: Wallet, text: "Income", path: "/income" },
+  { icon: ArrowLeftRight, text: "Expenses", path: "/expenses" },
+  { icon: Settings, text: "Settings", path: "/settings" },
 ];
 
 const navLinkStyles: React.CSSProperties = {
@@ -32,10 +33,10 @@ export const NavLinks: React.FC = () => {
   return (
     <nav style={navContainerStyles}>
       {navLinks.map((link) => (
-        <a href="#" key={link.text} style={navLinkStyles}>
+        <Link to={link.path} key={link.text} style={navLinkStyles}>
           <link.icon size={20} style={{ marginRight: 15 }} />
           {link.text}
-        </a>
+        </Link>
       ))}
     </nav>
   );
